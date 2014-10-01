@@ -19,6 +19,7 @@ Workshop Program: Please find attached the workshop program (the shared google d
 be attached).
 
 Prerequisites:
+-------------
 
 Attendees are expected to understand how to run from the commandline, and install 
 
@@ -45,6 +46,7 @@ simple mining tasks for well-defined entities which can be scientific terms or m
 etc. which can be used for identifiers.
 
 Reminder:
+---------
 
 The Workshop will take place between 9:30 -17:00 in the room A2-33 (main EBI building). 
 
