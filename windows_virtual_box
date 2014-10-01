@@ -28,5 +28,8 @@ Window appears ,
  
  [Figure 1 shows VBox start menu - click green "Start" vbox.png]
  then get ContentMIne VM loaded...
- [Figure 2 shows ContentMine window
+ [Figure 2 shows ContentMine window with two header bars]
+ >> click on RH icon to remove them
+ THEN (non obvious) RIGHT-click on main window and use pop-up menu to select TERMINAL
+ [Figure 3 Unix shell] where I have executed  a few commands
  
