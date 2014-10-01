@@ -1,7 +1,18 @@
 # Markup higlighted exercise
 
 [This exercise has been run in all workshops as an "icebreaker" and works very well. 
-Here we extend it for informatics professionals to include ideas of precison/recall and also final target vocabularies.]
+Here we extend it for informatics professionals to include ideas of precision/recall and also final target vocabularies.]
 
+* You will be provided with paper copies of pages from one (or two) scientific articles. Although technical you should be able to
+carry out this exercise without any deep scientific knowledge
+* Work in about 4 groups of up to 6 people. Each person has a different highlighter pen to markup up *entities* in the article. 
+(code below)
+* Mark up all entities in each page starting at the top (only mark new entities and stop after 10). Swap the pages within the 
+group so each gets exposed to every marker pen.
+
+## Entities
+
+An entity is a complete nounal word or phrase which can/could be found in a systematic taxonomy or definition. 
+Thus "1984", "Pleistocene", "5 minutes" could be marked as date/times, while "recently" would be too fuzzy.
 
 
