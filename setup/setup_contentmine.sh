@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ## ContentMine VM setup
 
 ## This script installs all ContentMine software for the workshop
