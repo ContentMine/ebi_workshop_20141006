@@ -1,5 +1,9 @@
 echo password | sudo -S echo "Now updating all ContentMine software."
 
+## Workshop files
+cd ~/ebi_workshop_20141006
+git pull
+
 ## XHTML2STM
 wget https://bitbucket.org/petermr/xhtml2stm/downloads/xhtml2stm_0.4~SNAPSHOT_all.deb
 sudo dpkg -i xhtml2stm_0.4~SNAPSHOT_all.deb

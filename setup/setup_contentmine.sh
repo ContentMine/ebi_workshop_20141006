@@ -37,3 +37,9 @@ npm install --global quickscrape
 sudo apt-get install -y git
 cd ~
 git clone https://github.com/ContentMine/journal-scrapers.git
+
+
+## Workshop materials
+
+cd ~
+git clone https://github.com/ContentMine/ebi_workshop_20141006.git
