@@ -17,8 +17,8 @@ A typical tree may have a number of nodes, branches (edges) & tip (leaf) labels.
 For real examples of published phylogenetic tree figures (and the vast variety of ways in which they can be depcited) see the PLOS ONE phylogeny figure collection on Flickr: www.bit.ly/PLOStrees
 
 
- Getting Started
- --------
+## Getting Started
+
  
  Inside your ContentMine VM, open up a terminal (e.g. right click, select Terminal).
  Type or copy-in & execute this script to make sure everything is up to date:
