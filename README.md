@@ -5,6 +5,8 @@
 ## ContentMine workshop at EBI room A2–33
 ## 9:30am – 5:00pm, October 6th 2014
 
+[Programme here](https://github.com/ContentMine/ebi_workshop_20141006/blob/master/info/EBI_programme.pdf?raw=true)
+
 ### Organisers:
 - Charles Oppenheim
 - Jo McEntyre
