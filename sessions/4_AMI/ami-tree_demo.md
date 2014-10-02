@@ -26,3 +26,20 @@ For real examples of published phylogenetic tree figures (and the vast variety o
  sh ebi_workshop_20141006/setup/ update_contentmine.sh
  ```
  
+ Run *ami-tree* with no arguments to see what command-line arguments it accepts, you should see something like:
+ 
+```
+$ ami-tree
+Tree: 
+Extracts trees (e.g. phylogenetic).
+Universal options ('-f' is short for '--foo', etc.):
+    -i  --input  inputSpec
+                 mandatory: filename, directoryName, url, or (coming) identifier (e.g. PMID:12345678)
+    -o  --output  outputSpec
+                 mandatory: filename, directoryName
+    -r  --recursive
+                 recurse through directories
+    -x  --extensions ext1 [ext2 ...]
+                 mandatory if input directory: file extensions (htm, pdf, etc.)
+
+```
