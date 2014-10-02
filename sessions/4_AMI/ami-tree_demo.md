@@ -12,3 +12,4 @@ Phylogenetic tree figures are widely used in scientific papers to demonstrate th
 
 ![example tree from Wikipedia](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NewickExample.svg/500px-NewickExample.svg.png)
 
+A typical tree may have a number of nodes, branches (edges) & tip (leaf) labels. Branches may or may not have specific lengths which if present can be useful information to capture & reuse.
