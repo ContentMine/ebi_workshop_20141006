@@ -21,7 +21,7 @@ For real examples of published phylogenetic tree figures (and the vast variety o
  --------
  
  Inside your ContentMine VM, open up a terminal (e.g. right click, select Terminal).
- type or copy-in & execute this script to make sure everything is up to date:
+ Type or copy-in & execute this script to make sure everything is up to date:
  ```
  sh ebi_workshop_20141006/setup/ update_contentmine.sh
  ```
