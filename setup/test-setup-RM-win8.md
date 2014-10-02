@@ -4,7 +4,6 @@ Following instructions from https://github.com/ContentMine/ebi_workshop_20141006
 * Downloaded VM (it took about 6mins at 5MB/s over PMR's home wireless)
 
 Double-clicked on the downloaded VM file and these screens appear:
-placeholder image, will insert real screenshot when I reboot out of win8
 ![Screenshot 1](https://dl.dropboxusercontent.com/u/757135/vm-screenshot.png)
 
 'importing' the VM into VirtualBox took my machine about 2 minutes
