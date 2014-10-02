@@ -32,3 +32,6 @@
   - dependencies
 - Resources
   - for additional resources and extra reading
+- Assets
+  - less organised material for adding into other places
+  - for figures, screenshots etc
