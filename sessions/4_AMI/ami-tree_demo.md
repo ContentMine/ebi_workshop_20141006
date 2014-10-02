@@ -5,7 +5,7 @@ Extracting phylogenetic tree data from images with ami-tree
  * Work on your own or in pairs.
  * The aim of this exercise is to extract computationally-reusable information from published scientific figures, in this case; phylogenies. The topology, branch lengths & tip labels will all be extracted from the image(s) so they can reused & re-analysed. 
 
- Phylogenetic Trees
+ Background - Phylogenetic Trees
  --------
 
 Phylogenetic tree figures are widely used in scientific papers to demonstrate the evolutionary relationships between the taxa studied. Further detail about these trees can be found on [Wikipedia](http://en.wikipedia.org/wiki/Phylogenetic_tree). 
