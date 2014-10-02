@@ -8,7 +8,7 @@ Extracting phylogenetic tree data from images with ami-tree
  Phylogenetic Trees
  --------
 
-Phylogenetic tree figures are commonly used in scientific papers are used to demonstrate the evolutionary relationships between the taxa studied. Further detail about these trees can be found on [Wikipedia](http://en.wikipedia.org/wiki/Phylogenetic_tree). 
+Phylogenetic tree figures are widely used in scientific papers to demonstrate the evolutionary relationships between the taxa studied. Further detail about these trees can be found on [Wikipedia](http://en.wikipedia.org/wiki/Phylogenetic_tree). 
 
 ![example tree from Wikipedia](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NewickExample.svg/500px-NewickExample.svg.png)
 
