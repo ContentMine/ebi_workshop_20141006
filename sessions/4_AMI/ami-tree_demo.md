@@ -43,3 +43,5 @@ Universal options ('-f' is short for '--foo', etc.):
                  mandatory if input directory: file extensions (htm, pdf, etc.)
 
 ```
+
+Navigate to *~/ebi_workshop_20141006/sessions/4_AMI/phylo_files/phylo-figure-images* and you'll find 44 bitmap figure images (as .png) of phylogenetic trees taken from freely available IJSEM papers. Each file is named after the DOI of the paper from which it came from. The last three digits of the file name indicate which figure it is in the paper, figure 1 = 000, figure 2 = 001 etc...
