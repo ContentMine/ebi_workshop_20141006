@@ -15,3 +15,14 @@ Phylogenetic tree figures are widely used in scientific papers to demonstrate th
 A typical tree may have a number of nodes, branches (edges) & tip (leaf) labels. Branches may or may not have specific lengths which if present can be useful information to capture & reuse.
 
 For real examples of published phylogenetic tree figures (and the vast variety of ways in which they can be depcited) see the PLOS ONE phylogeny figure collection on Flickr: www.bit.ly/PLOStrees
+
+
+ Getting Started
+ --------
+ 
+ Inside your ContentMine VM, open up a terminal (e.g. right click, select Terminal).
+ type or copy-in & execute this script to make sure everything is up to date:
+ ```
+ sh ebi_workshop_20141006/setup/ update_contentmine.sh
+ ```
+ 
