@@ -40,11 +40,12 @@ git pull 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
 echo -ne "${blue}Installing any missing software...${NC}  "
+
 ## Tesseract-OCR
 sudo apt-get install -y tesseract-ocr 1>/dev/null 2>/dev/null
 
 ## Other useful installs
-sudo apt-get install -y mercurial maven 1>/dev/null 2>/dev/null
+sudo apt-get install -y mercurial maven avogadro 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
 echo -e "${green}All ContentMine software updates completed.${NC}"
