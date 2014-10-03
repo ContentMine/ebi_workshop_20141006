@@ -1,12 +1,13 @@
 red='\e[0;31m'
-blue='\e[0;32m'
-green='\e[0;34m'
-lightgreen='\e[1;34m'
+blue='\e[0;34m'
+green='\e[0;32m'
+lightgreen='\e[1;32m'
 NC='\e[0m' # No Color
 
 echo -e "${blue}Now updating all ContentMine software.${NC}"
 
-echo password | sudo -S echo -e "${lightgreen}(sudo authentication successful)${NC}"
+echo password | sudo -S echo "" 1>/dev/null 2>/dev/null
+echo -e "${lightgreen}(sudo authentication successful)${NC}"
 
 ## Workshop files
 echo -e "${blue}Updating workshop files...${NC}"
@@ -48,3 +49,6 @@ sudo apt-get install -y mercurial maven 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
 echo -e "${green}All ContentMine software updates completed.${NC}"
+
+echo "This window will close in 10 seconds"
+sleep 10
