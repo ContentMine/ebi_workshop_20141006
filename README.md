@@ -5,7 +5,10 @@
 ## ContentMine workshop at EBI room A2–33
 ## 9:30am – 5:00pm, October 6th 2014
 
-## \#EBImine14
+## <img src="http://www.biddlestudios.com/images/twitter_favicon.png" alt="twitter logo" style="width:10px;height:10px"> \#EBImine14
+
+<a class="twitter-timeline" href="https://twitter.com/hashtag/EBImine14" data-widget-id="517989704789004288">#EBImine14 Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 [Programme here](https://github.com/ContentMine/ebi_workshop_20141006/blob/master/info/EBI_programme.pdf?raw=true)
 
