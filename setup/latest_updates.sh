@@ -1,6 +1,6 @@
 echo "Now updating all ContentMine software."
 
-echo password | sudo -S "(sudo authentication successful)"
+echo password | sudo -S echo "(sudo authentication successful)"
 
 ## Workshop files
 cd ~/ebi_workshop_20141006
