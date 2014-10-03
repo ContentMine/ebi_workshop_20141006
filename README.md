@@ -10,15 +10,15 @@
 [Programme here](https://github.com/ContentMine/ebi_workshop_20141006/blob/master/info/EBI_programme.pdf?raw=true)
 
 ### Organisers:
-- Charles Oppenheim @CharlesOppenh
-- Jo McEntyre @jomcentyre
-- Mark MacGillivray @cottagelabs
+- Charles Oppenheim [@CharlesOppenh](https://twitter.com/CharlesOppenh)
+- Jo McEntyre [@jomcentyre](https://twitter.com/jomcentyre)
+- Mark MacGillivray [@cottagelabs](https://twitter.com/cottagelabs)
 - Mark Williamson 
-- Peter Murray-Rust @petermurrayrust
-- Richard Smith-Unna @blahah404
-- Ross Mounce @rmounce
-- Şenay Kafkas @SenayKafkas
-- Stephanie Smith-Unna @treblesteph
+- Peter Murray-Rust [@petermurrayrust](https://twitter.com/petermurrayrust)
+- Richard Smith-Unna [@blahah404](https://twitter.com/blahah404)
+- Ross Mounce [@rmounce](https://twitter.com/rmounce)
+- Şenay Kafkas [@SenayKafkas](https://twitter.com/SenayKafkas)
+- Stephanie Smith-Unna [@treblesteph](https://twitter.com/treblesteph)
 
 (~16 participants)
 
