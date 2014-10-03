@@ -22,4 +22,7 @@ npm update --global quickscrape
 cd ~/journal-scrapers
 git pull
 
+## Tesseract-OCR
+sudo apt-get install -y tesseract-ocr
+
 echo "All ContentMine software updates completed."
