@@ -18,4 +18,4 @@ Universal options ('-f' is short for '--foo', etc.):
 
 ```
 
-Source materials for this exercise are located at 
+Source materials for this exercise are located at */usr/share/xhtml2stm-repo/exampleData*
