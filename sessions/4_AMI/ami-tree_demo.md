@@ -78,5 +78,18 @@ In some cases the quality of the published figure is just too poor for ami-tree 
 
 ![line break example](https://dl.dropboxusercontent.com/u/757135/linebreak1.png)
 
+## Extraction of tip labels
 
+You may have noticed that ami-tree does not yet return extracted tip-labels from the image - this is still under development. But to show you what can be achieved try using an OCR-engine like tesseract, off-the-shelf, untrained.
 
+Example output of tesseract-ocr against the first image is provided in */home/workshop/ebi_workshop_20141006/sessions/4_AMI/phylo_files/tesseract-output-of-phylofigures*
+
+a common error is that 'l' is interpreted by tesseract as '/' but otherwise the output is fairly accurate.
+
+Try tesseract on another figure image file.
+
+```
+tesseract <inputfile> <outputfile>
+```
+
+How correct on a per character basis are the Latin names? How correct are the GenBank accession numbers? Which are more reliable?
