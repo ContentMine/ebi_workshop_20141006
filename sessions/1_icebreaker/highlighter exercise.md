@@ -1,6 +1,8 @@
 Highlighter Markup Exercise
 ============================
 
+## The paper can be found [here](http://www.biomedcentral.com/1471-2148/14/70)
+
 [This exercise has been run in all workshops as an "icebreaker" and works very well. 
 Here we extend it for informatics professionals to include ideas of precision/recall and also final target vocabularies.]
 
