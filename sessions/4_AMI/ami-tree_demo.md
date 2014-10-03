@@ -100,3 +100,13 @@ How correct on a per character basis are the Latin names? How correct are the Ge
 * The BBSRC-funded grant proposal is [here](http://www.bbsrc.ac.uk/pa/grants/AwardDetails.aspx?FundingReference=BB/K015702/1)
 
 * Conference talk slides <iframe src="//www.slideshare.net/slideshow/embed_code/36236562" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/rossmounce/the-pluto-project-ievobio-2014" title="The PLUTo project @iEvoBio 2014" target="_blank">The PLUTo project @iEvoBio 2014</a> </strong> given by <strong><a href="http://www.slideshare.net/rossmounce" target="_blank">Ross Mounce</a></strong> </div>
+
+* Blog post about the [PLOS ONE phylogeny figure image collection on Flickr](http://rossmounce.co.uk/2014/05/07/plos-one-phylogeny/) created by Ross Mounce as part of the PLUTo project
+
+## Further Reading
+
+* Stoltzfus, A., O'Meara, B., Whitacre, J., Mounce, R., Gillespie, E., Kumar, S., Rosauer, D., and Vos, R. 2012. Sharing and re-use of phylogenetic trees (and associated data) to facilitate synthesis. BMC Research Notes 5:574 [DOI: 10.1186/1756-0500-5-574](http://dx.doi.org/10.1186/1756-0500-5-574)
+* Drew, B. T., Gazis, R., Cabezas, P., Swithers, K. S., Deng, J., Rodriguez, R., Katz, L. A., Crandall, K. A., Hibbett, D. S., and Soltis, D. E. 2013. Lost branches on the tree of life. PLoS Biology 11:e1001636 [DOI: 10.1371/journal.pbio.1001636](http://dx.doi.org/10.1371/journal.pbio.1001636)
+* Magee, A. F., May, M. R., and Moore, B. R. 2014. The dawn of open access to phylogenetic data. arXiv preprint [arXiv:1405.6623](http://arxiv.org/abs/1405.6623)
+* Laubach, T., von Haeseler, A., and Lercher, M. 2012. TreeSnatcher plus: capturing phylogenetic trees from images. BMC Bioinformatics 13:110 [DOI: 10.1186/1471-2105-13-110](http://dx.doi.org/10.1186/1471-2105-13-110)
+* Hughes, J. 2011. TreeRipper web application: towards a fully automated optical tree recognition software. BMC Bioinformatics 12:178 [DOI: 10.1186/1471-2105-12-178](http://dx.doi.org/10.1186/1471-2105-12-178)
