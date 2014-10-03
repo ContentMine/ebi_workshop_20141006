@@ -5,18 +5,20 @@
 ## ContentMine workshop at EBI room A2–33
 ## 9:30am – 5:00pm, October 6th 2014
 
+## \#EBImine14
+
 [Programme here](https://github.com/ContentMine/ebi_workshop_20141006/blob/master/info/EBI_programme.pdf?raw=true)
 
 ### Organisers:
-- Charles Oppenheim
-- Jo McEntyre
-- Mark MacGillivray
-- Mark Williamson
-- Peter Murray-Rust
-- Richard Smith-Unna
-- Ross Mounce
-- Şenay Kafkas
-- Stephanie Smith-Unna
+- Charles Oppenheim @CharlesOppenh
+- Jo McEntyre @jomcentyre
+- Mark MacGillivray @cottagelabs
+- Mark Williamson 
+- Peter Murray-Rust @petermurrayrust
+- Richard Smith-Unna @blahah404
+- Ross Mounce @rmounce
+- Şenay Kafkas @SenayKafkas
+- Stephanie Smith-Unna @treblesteph
 
 (~16 participants)
 
