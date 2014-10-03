@@ -76,7 +76,7 @@ Ami-tree is still in development. Which images can it correctly interpret, which
 
 In some cases the quality of the published figure is just too poor for ami-tree to correctly interpret:
 
-![line break example](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/phylo_files/phylo-figure-images/ijs.0.014126-0-000.pbm.png)
+![line break example](https://dl.dropboxusercontent.com/u/757135/linebreak1.png)
 
 
 
