@@ -46,4 +46,16 @@ Universal options ('-f' is short for '--foo', etc.):
 
 Navigate to *~/ebi_workshop_20141006/sessions/4_AMI/phylo_files/phylo-figure-images* and you'll find 44 bitmap figure images (as .png) of phylogenetic trees taken from freely available IJSEM papers. Each file is named after the DOI of the paper from which it came from. The last three digits of the file name indicate which figure it is in the paper, figure 1 = 000, figure 2 = 001 etc...
 
+Try running ami-tree on the first image file:
+
+```
+ami-tree -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/phylo_files/phylo-figure-images/ijs.0.014126-0-000.pbm.png
+```
+
+In the output to terminal you should see the correct [Newick string](http://en.wikipedia.org/wiki/Newick_format) that corresponds to the figure image:
+
+```
+1420 [main] DEBUG org.xmlcml.diagrams.phylo.PhyloTreeAnalyzer  - NEWICK: (((585_569:0.58,(562_535:0.5,((((565_188:0.29,(464_223:0.12,460_257:0.11):0.02):0.03,((524_154:0.15,458_119:0.05):0.05,((611_50:0.19,548_15:0.09):0.06,510_84:0.09):0.09):0.06):0.01,((506_362:0.13,551_327:0.19):0.02,488_292:0.12):0.09):0.04,((525_431:0.24,(515_500:0.18,638_466:0.37):0.05):0.04,485_397:0.21):0.03):0.14):0.04):0.06,386_605:0.33):0.25,639_659:0.97):0.03;
+```
+
 
