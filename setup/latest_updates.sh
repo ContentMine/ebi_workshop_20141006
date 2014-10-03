@@ -4,8 +4,6 @@ green='\e[0;34m'
 lightgreen='\e[1;34m'
 NC='\e[0m' # No Color
 
-echo -e "${red}Hello Stackoverflow${NC}"
-
 echo -e "${blue}Now updating all ContentMine software.${NC}"
 
 echo password | sudo -S echo -e "${lightgreen}(sudo authentication successful)${NC}"
