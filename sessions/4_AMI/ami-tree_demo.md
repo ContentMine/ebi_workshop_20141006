@@ -48,6 +48,8 @@ Navigate to *~/ebi_workshop_20141006/sessions/4_AMI/phylo_files/phylo-figure-ima
 
 Try running ami-tree on the first image file:
 
+![image of first tree](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/phylo_files/phylo-figure-images/ijs.0.014126-0-000.pbm.png)
+
 ```
 ami-tree -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/phylo_files/phylo-figure-images/ijs.0.014126-0-000.pbm.png
 ```
