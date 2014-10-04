@@ -1,6 +1,12 @@
 # Extracting species names mentioned in papers 
 
-In the VM, open up a terminal and execute ami-species with no arguments, you should see:
+In the VM, open up a terminal and execute 
+
+```
+$ ami-species
+```
+
+and you should see:
 
 ```
 $ ami-species
