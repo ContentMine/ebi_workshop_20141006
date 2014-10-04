@@ -100,6 +100,20 @@ Visit ChEBI [ChemicalStructuresOfBiologicalInterest](http://www.ebi.ac.uk/chebi/
 ![search result in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.2.png)
 
 
+## Molecules
+
+ami-chem also generates CML (Chemical Markup Language) files which contain the complete sematic results for the molecule:
+
+```
+ target/image.g.2.13.xml/image.g.2.13.svg.molecule0.cml 
+```
+which looks like:
+
+and can be viewed in Avogadro (distributed with the system) - screenshot:
+
+![Avogadro screenshot](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/avogadro.2.13.png)
+
+
 
 
 
