@@ -42,18 +42,22 @@ Exclude metadata.
 components
 * GREEN. Chemical compounds. Resolvable in PubChem, or of generic chemical form. Not "diesel oil", "butter".
 
-Precison and Recall
-===================
+``*Please indicate in the Etherpad where you think algorithmic rules (including lookup or computation) could be developed*``
 
-When your group has finished swap your sheets with your neighbours. Critique *their* markkup, drawing a circle round where you
+
+
+Precision and Recall
+====================
+
+When your group has finished swap your sheets with your neighbours. Critique *their* markup, drawing a circle round where you
 disagree - either for an omission ("false negative") or a wrongly marked entity ("false positive").
 
-*Note there is NO absolutely right of wrong answer*, there is inter-annotator dis/agreemnt. The better the agreement the higher 
+*Note there is NO absolutely right or wrong answer*, there is only inter-annotator dis/agreemnt. The better the agreement the higher 
 scores we should expect from programmatic output. 
 
 Note also this is very tedious and generally impossible without Open material. Humans have to:
 
-* write and agree th rules. We wrote 31 pages for chemistry.
+* write and agree the rules. We wrote 31 pages for chemistry.
 * have several people independently mark up a test corpus. Calculate the interannotator agreement. We got 92% for chemistry.
 * write a program and train it against a traing corpus (more work)
 * use a validation corpus (even more work) to test how well the program performs.
