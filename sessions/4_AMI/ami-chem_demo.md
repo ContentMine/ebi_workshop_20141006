@@ -25,6 +25,8 @@ A. flavus (NRRL 3357" which contains names and structures on many metabolites an
 
 ![image of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabo2010039.png)
 
+![svg of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.2.13.svg)
+
 ```
 ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/metab2010039.png
 ```
