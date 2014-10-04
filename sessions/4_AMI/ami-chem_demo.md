@@ -22,14 +22,26 @@ Extracts complete chemical structures and 2-D coordinates from vector-based chem
 Taken from Metabolites 2012, 2, 39-56; doi:10.3390/metabo2010039. "Comparative Chemistry of Aspergillus oryzae (RIB40) and
 A. flavus (NRRL 3357" which contains names and structures on many metabolites and metabolic reactions.
 
+[PDF of article](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabolites-02-00039.pdf) 
 
-![image of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabo2010039.png)
+We'll use Page 2 (screenshot)
 
-![svg of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.2.13.svg)
+![image of Figure 2](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabo2010039.png)
+
+``IN THE PDF`` visit Page 2 and verify that the image can be scaled may times without fuzziness or jaggies. This shows that it's preserved the vectors.
+
+AMI has extracted all subsets of vectors into chunks (g.2.12.3 is page 2 section 12 image 3). Here's the SVG (displays in most browsers).
+
+![svg of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg)
+
+So we run:
 
 ```
-ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/metab2010039.png
+ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/image.g.2.13.svg
 ```
+
+and get output something like:
+
 
 
 
