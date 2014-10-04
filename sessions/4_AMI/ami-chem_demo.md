@@ -95,9 +95,9 @@ Visit [Daylight Depict site](http://www.daylight.com/daycgi/depict), paste in th
 ### ChEBI
 
 Visit ChEBI [ChemicalStructuresOfBiologicalInterest](http://www.ebi.ac.uk/chebi/) and search for "kojic acid" which should return 
-![search in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/ikojic.chebi.png)
+![search in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.png)
 
-![search result in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/ikojic.chebi2.png)
+![search result in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi2.png)
 
 
 
