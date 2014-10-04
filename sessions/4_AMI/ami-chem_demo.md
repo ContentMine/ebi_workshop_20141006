@@ -84,6 +84,25 @@ There will also be images (PNG and SVG):
 
 Note that the image is NOT a copy of the original. It is completely generated from the semantic representation. Therefore it cannot infringe copyright.
 
+## checking results!
+
+### Daylight Depict
+
+Visit [Daylight Depict site](http://www.daylight.com/daycgi/depict), paste in the string C1(C(=C(OC(=C1[H])C(O[H])([H])[H])[H])O[H])=O and you'll see a picture confirming the structure (it uses a different drawing convention, with circles, but it's the same molecule).
+
+![png from depict](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.smiles.png)
+
+### ChEBI
+
+Visit ChEBI [ChemicalStructuresOfBiologicalInterest](http://www.ebi.ac.uk/chebi/) and search for "kojic acid" which should return 
+![search in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/ikojic.chebi.png)
+
+![search result in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/ikojic.chebi2.png)
+
+
+
+
+
 
 
 
