@@ -109,6 +109,21 @@ ami-chem also generates CML (Chemical Markup Language) files which contain the c
 ```
 which looks like:
 
+<?xml version="1.0" encoding="UTF-8"?>
+<molecule x2="421.89788" y2="531.7425000000001" xmlns="http://www.xml-cml.org/schema">
+  <atomArray>
+    <atom id="a11" elementType="C" x2="41.641" y2="-52.553" hydrogenCount="0"/>
+    <atom id="a12" elementType="C" x2="40.62" y2="-53.19" hydrogenCount="0"/>
+ ....
+  </atomArray>
+  <bondArray>
+    <bond atomRefs2="a11 a12" id="a11_a12" order="S"/>
+    <bond atomRefs2="a13 a11" id="a13_a11" order="S"/>
+ ....
+  </bondArray>
+  <name>/Users/pm286/workspace/...xhtml2stm/molecules/image.g.2.13.svg</name>
+</molecule>
+
 and can be viewed in Avogadro (distributed with the system) - screenshot:
 
 ![Avogadro screenshot](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/avogadro.2.13.png)
