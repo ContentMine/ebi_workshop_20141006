@@ -1,5 +1,7 @@
 #OVERVIEW
 
+*This material will be continually updated as required during the day. Use the Etherpad in first instance.
+ 
 ### Openness
 
 We believe in Open (free to use, reuse and redistribute)
@@ -20,6 +22,13 @@ frequently brings additional remote participants. The session will be human-reco
 
 There are 6-8 members of the ContentMine team present and they are delighted to work with individuals or groups as required.
 Do not suffer in silence!
+
+### Etherpad and Spreadsheets
+
+It is very useful to capture contributions this way; use http://pads.cottagelabs.com/p/ebiworkshop for immediate thoughts, shared 
+resources, etc. (Use links where this are large). Please identify yourself (button at Top/Right). At the end of the day key material will be transcribed
+
+It may be useful to create Google Spreadsheets for more structured feedback
 
 ## Methods of working
 
