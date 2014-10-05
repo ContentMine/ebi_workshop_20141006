@@ -40,6 +40,27 @@ Extracts complete chemical structures and 2-D coordinates from vector-based chem
 
 ## Example: molecules from text
 
+We will work with a patent as an example: "[Production of fatty alcohols with fatty alcohol forming acyl-coa reductases](http://www.google.com/patents/US20110000125)".
+
+The text is rich with names of chemical molecules. We will use OSCAR4 ([site](https://bitbucket.org/wwmm/oscar4/wiki/Home) | [paper](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3205045/)) to detect chemical entities in the text and convert them to a set of standard representations.
+
+The patent PDF is already on your machine at `~/ebi_workshop_20141006/sessions/4_AMI/chem_files/US20110000125.pdf`.
+
+To convert the PDF to a dataset of the chemical entities inside it, open up a terminal and run:
+
+```bash
+$ oscarpdf2json US20110000125.pdf > US20110000125.json
+```
+
+There should be a file in the current directory called `US20110000125.json`. This is a [JSON formatted](http://en.wikipedia.org/wiki/JSON) file. JSON can be viewed nicely in the browser. To view the file, run the following in the terminal:
+
+```bash
+$ iceweasel &
+$ iceweasel --new-tab US20110000125.json
+```
+
+You can verify the procedure manually by using [PubChem](https://pubchem.ncbi.nlm.nih.gov/) to search for the InChiKey and other descriptors.
+
 ## Example: molecules from figures 1
 
 Taken from Metabolites 2012, 2, 39-56; doi:10.3390/metabo2010039. "Comparative Chemistry of Aspergillus oryzae (RIB40) and
