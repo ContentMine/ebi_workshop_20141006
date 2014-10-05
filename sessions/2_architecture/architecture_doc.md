@@ -1,0 +1,23 @@
+#Architecture for Mining
+
+Diagrams required here...
+
+(1) Overall Crawl-scrape-structure-extract-repulish chain
+(2) Details of AMI document conversion flow (PDF-> SVG, etc.
+
+## Example of domain-based extractor (Chemical tagger)
+
+A powerful achievable extraction technique is Natural Language Processing comabined with domain ontologies. [ChemicalTagger](http://chemicaltagger.ch.cam.ac.uk/) is a shallow parser (Lezan Hawizy, Nico Adams and PMR) coupled to OSCAR. It uses chemistry-specific NLP for phrases in recipes. 
+
+Visit the web page and try the example there. 
+
+Try the atomospheric chemistry example (Hannah Barjat) which also uses geotagging
+
+Now find some chemistry recipes on the web (not easy as most are not Open Source yet). Cut and paste a typical synthesis (omitting the spectra, which we can also do), paste into ChemicalTagger and see how well it does. Poor recall may be due to a different de facto style.
+
+### Extending tagger
+
+We believe it is relatively easy for domain experts to build taggers for other experimental and procedural sciences.
+
+
+
