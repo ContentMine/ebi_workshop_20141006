@@ -36,7 +36,7 @@ If this is too general there are subsections with the spec that might be used.
 ## Running ami-regex
 
 At present the regexes are edited into a file such as regex/species.xml. This allows for better maintenance and more control
-(flags can be added). It's also much better where the regex consists of many alternatives (e.g.a list of species or black-list terms).
+(flags can be added). It's also much better where the regex consists of many alternatives (e.g. a list of species or black-list terms).
 Here's my ``regex/genbank.xml``
 
 ```
@@ -71,7 +71,7 @@ to )
 
 When we want many different searches combined we can use multiple ```<regex>``` elements. (Single regexes are impossible to maintain,
 yet some run to pages!!). Here is Ross Mounce's compilation
-of terms which classify a paper as computational phylogenetics. The weights allow for precision/recal to be compbined and varied.
+of terms which classify a paper as computational phylogenetics. The weights allow for precision/recal to be combined and varied.
 
 ```
 <compoundRegex title="phylotree">
