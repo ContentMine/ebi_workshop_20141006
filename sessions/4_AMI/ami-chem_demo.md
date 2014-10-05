@@ -4,10 +4,10 @@ In this example we will use AMI's chemistry tools to analyse a paper and reconst
 
 We will extract data from the paper at four different levels:
 
-1. Automaticaly detecting chemical molecules in the text and extracting their semantic representation.
-2. Given a picture of a chemical molecule, extract the semantic representation.
-3. Given a paper, identify all the figures that contain chemical molecules and extract their semantic representation.
-4. Given a paper, identify all figures that contain reactions between chemical molecules and extract their semantic representation.
+1. Given a paper, identify chemical molecules in the text and reconstruct their semantic representation.
+2. Given a picture of a chemical molecule, reconstruct the semantic representation.
+3. Given a paper, identify all the figures that contain chemical molecules and reconstruct their semantic representation.
+4. Given a paper, identify all figures that contain reactions between chemical molecules and reconstruct their semantic representation.
 
 ## Contents
 
@@ -42,7 +42,7 @@ Extracts complete chemical structures and 2-D coordinates from vector-based chem
 
 We will work with a patent as an example: "[Production of fatty alcohols with fatty alcohol forming acyl-coa reductases](http://www.google.com/patents/US20110000125)".
 
-The text is rich with names of chemical molecules. We will use OSCAR4 ([site](https://bitbucket.org/wwmm/oscar4/wiki/Home) | [paper](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3205045/)) to detect chemical entities in the text and convert them to a set of standard representations.
+The text is rich with names of chemical molecules. We will use the OSCAR4 library ([site](https://bitbucket.org/wwmm/oscar4/wiki/Home) | [paper](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3205045/)) wrapped in a tool called [chemextractor](https://bitbucket.org/mjw99/chemextractorpublic/) to detect chemical entities in the text and convert them to a set of standard representations.
 
 The patent PDF is already on your machine at `~/ebi_workshop_20141006/sessions/4_AMI/chem_files/US20110000125.pdf`.
 
@@ -52,35 +52,35 @@ To convert the PDF to a dataset of the chemical entities inside it, open up a te
 $ oscarpdf2json US20110000125.pdf > US20110000125.json
 ```
 
-There should be a file in the current directory called `US20110000125.json`. This is a [JSON formatted](http://en.wikipedia.org/wiki/JSON) file. JSON can be viewed nicely in the browser. To view the file, run the following in the terminal:
+There should now be a file in the current directory called `US20110000125.json`. This is a [JSON formatted](http://en.wikipedia.org/wiki/JSON) file. JSON can be viewed nicely in the browser. To view the file, run the following in the terminal:
 
 ```bash
 $ iceweasel &
 $ iceweasel --new-tab US20110000125.json
 ```
 
-You can verify the procedure manually by using [PubChem](https://pubchem.ncbi.nlm.nih.gov/) to search for the InChiKey and other descriptors.
+You can verify the results manually by using [ChEBI](http://www.ebi.ac.uk/chebi), [Chembl](https://www.ebi.ac.uk/chembl/), or [PubChem](https://pubchem.ncbi.nlm.nih.gov/) to search for the InChiKey and other descriptors included in the JSON output.
 
 ## Example: molecules from figures 1
 
-Taken from Metabolites 2012, 2, 39-56; doi:10.3390/metabo2010039. "Comparative Chemistry of Aspergillus oryzae (RIB40) and
-A. flavus (NRRL 3357" which contains names and structures on many metabolites and metabolic reactions.
+We will work with a chemistry paper, "[Comparative Chemistry of Aspergillus oryzae (RIB40) and
+A. flavus (NRRL 3357)](http://dx.doi.org/10.3390/metabo2010039)", which contains names and structures of many metabolites and metabolic reactions.
 
-[PDF of article](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabolites-02-00039.pdf) 
+A PDF of the article is included in the virtual machine: `ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00039.pdf` or can be [downloaded](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabolites-02-00039.pdf).
 
-We'll use Page 2 (screenshot)
+We are going to use the figure on page two to demonstrate the process of reconstructing semantic chemical markup from a preserved vector diagram. Below is a screenshot of the page...
 
 ![image of Figure 2](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabo2010039.png)
 
-In the PDF visit Page 2 and verify that the image can be scaled many times without fuzziness or jaggies. This shows that the publishers have preserved the vectors.
+In the PDF visit Page 2 and zoom in and out. Verify that the image can be scaled many times without fuzziness or jagged lines appearing. This shows that the publishers have preserved the vector representation of the image.
 
-AMI has extracted all subsets of vectors into chunks (g.2.12.3 is page 2, section 12, image 3).
+AMI has previously been run on this PDF to extract  the vector diagrams. It has extracted all subsets of vectors into chunks categorised by page, section and image. This figure is `g.2.12.3`: page 2, section 12, image 3.
 
-Here's the SVG:
+Here's the figure:
 
 ![svg of kojic acid](https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg)
 
-Your browser may show a broken link to the source which looks like:
+And its source:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -95,62 +95,67 @@ Your browser may show a broken link to the source which looks like:
  </g>
 </svg>
 ```
-The `path`s are the bond and the `text` are the element symbols (atoms). AMI-chem can interpret this.
 
-So we run:
+The `path`s represent the bonds, and the `text`s are the element symbols (atoms). AMI-chem can interpret this.
+
+Now we will run AMI-chem on the diagram. Open up a terminal and run:
 
 ```bash
 $ ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/image.g.2.13.svg
 ```
 
-and get output something like:
+You should see output that looks something like this:
 
-```
+```bash
 245  [main] INFO  org.xmlcml.xhtml2stm.visitor.chem.ChemVisitor  - SVGContainer name: /Users/pm286/workspace/xhtml2stm/./src/test/resources/org/xmlcml/xhtml2stm/molecules/image.g.2.13.svg
 245  [main] INFO  org.xmlcml.xhtml2stm.visitor.chem.ChemVisitor  - Working with svgContainer: /Users/pm286/workspace/xhtml2stm/./src/test/resources/org/xmlcml/xhtml2stm/molecules/image.g.2.13.svg
 1686 [main] DEBUG org.xmlcml.xhtml2stm.visitor.chem.MoleculeCreator  - Looking for reactions
 2138 [main] DEBUG org.xmlcml.xhtml2stm.visitor.chem.MoleculeCreator  - Molecule potentially part of a reaction ((384.63977442374846,459.1559855762515),(508.7623916951517,554.7226083048484)) 16 C1(C(=C(OC(=C1[H])C(O[H])([H])[H])[H])O[H])=O
-
 ...
-
 3219 [main] DEBUG org.xmlcml.xhtml2stm.visitor.VisitorOutput  - outputFile: target/image.g.2.13.xml
-
 ```
 
 The `C1(C(=C(OC(=C1[H])C(O[H])([H])[H])[H])O[H])=O` is an inline chemical formula in SMILES format.
 
-There will also be images (PNG and SVG):
+There will also be images...
 
-![png from ami-chem](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.png)
+| PNG | SVG |
+| --- | --- |
+| ![png from ami-chem](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.png) | ![SVG from ami-chem](https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.svg) |
 
-![SVG from ami-chem](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.svg)
+Note that the image is NOT a copy of the original. **It is completely generated from the semantic representation**. This is important: it mean the new image cannot infringe copyright.
 
-Note that the image is NOT a copy of the original. **It is completely generated from the semantic representation**. Therefore it cannot infringe copyright.
-
-### Checking results!
+### Checking results
 
 #### Daylight Depict
 
 Visit [Daylight Depict site](http://www.daylight.com/daycgi/depict), paste in the string C1(C(=C(OC(=C1[H])C(O[H])([H])[H])[H])O[H])=O and you'll see a picture confirming the structure (it uses a different drawing convention, with circles, but it's the same molecule).
 
-![png from depict](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.smiles.png)
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.smiles.png" width=350px align="center">
+</div>
 
 #### ChEBI
 
-Visit ChEBI [ChemicalStructuresOfBiologicalInterest](http://www.ebi.ac.uk/chebi/) and search for "kojic acid" which should return 
-![search in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.png)
+Visit ChEBI [ChemicalStructuresOfBiologicalInterest](http://www.ebi.ac.uk/chebi/) and search for "kojic acid":
 
-![search result in chebi](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.2.png)
+<img src="https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.png" width=500px align="center">
 
+This should return results like:
 
-### Molecules
+<img src="https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/kojic.chebi.2.png" width=350px align="center">
 
-ami-chem also generates CML (Chemical Markup Language) files which contain the complete sematic results for the molecule:
+This matches the original image, the semantically reconstructed SVG/PNG, and the reconstruction from the InChi string.
+
+### Visualising molecules
+
+AMI-chem also generates CML (Chemical Markup Language) files which contain the complete sematic results for the molecule. There shoule be a file like this:
 
 ```
 target/image.g.2.13.xml/image.g.2.13.svg.molecule0.cml 
 ```
-which looks like:
+
+The contents of the file are CML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -169,7 +174,13 @@ which looks like:
 </molecule>
 ```
 
-and can be viewed in Avogadro (distributed with the system) - screenshot:
+and can be viewed in Avogadro. To do this, run the following in your terminal:
+
+```bash
+$ avogadro target/image.g.2.13.xml/image.g.2.13.svg.molecule0.cml
+```
+
+You can them manipulate the molecule in 3D:
 
 ![Avogadro screenshot](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/avogadro.2.13.png)
 
