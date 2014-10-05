@@ -48,16 +48,14 @@ Your browser may show a broken link to the source which looks like:
    ...
  </g>
 </svg>
-
+```
 The ``path``s are the bond and the ``text`` are the element symbols (atoms). AMI-chem can interpret this:
 
 
-```
-
 So we run:
 
-```
-ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/image.g.2.13.svg
+```bash
+$ ami-chem -i /home/workshop/ebi_workshop_20141006/sessions/4_AMI/chem_files/image.g.2.13.svg
 ```
 
 and get output something like:
@@ -109,6 +107,7 @@ ami-chem also generates CML (Chemical Markup Language) files which contain the c
 ```
 which looks like:
 
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <molecule x2="421.89788" y2="531.7425000000001" xmlns="http://www.xml-cml.org/schema">
   <atomArray>
@@ -123,6 +122,7 @@ which looks like:
   </bondArray>
   <name>/Users/pm286/workspace/...xhtml2stm/molecules/image.g.2.13.svg</name>
 </molecule>
+```
 
 and can be viewed in Avogadro (distributed with the system) - screenshot:
 
