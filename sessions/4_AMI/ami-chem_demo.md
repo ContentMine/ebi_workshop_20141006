@@ -62,10 +62,10 @@ You can verify the results manually by using [ChEBI](http://www.ebi.ac.uk/chebi)
 
 ## Example: molecules from figures 1
 
-We will work with a chemistry paper, "[Comparative Chemistry of Aspergillus oryzae (RIB40) and
-A. flavus (NRRL 3357)](http://dx.doi.org/10.3390/metabo2010039)", which contains names and structures of many metabolites and metabolic reactions.
+We will work with a chemistry paper, "[Comparative Chemistry of *Aspergillus oryzae* (RIB40) and
+*A. flavus* (NRRL 3357)](http://dx.doi.org/10.3390/metabo2010039)", which contains names and structures of many metabolites and metabolic reactions.
 
-A PDF of the article is included in the virtual machine: `ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00039.pdf` or can be [downloaded](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabolites-02-00039.pdf).
+A PDF of the article is included in the virtual machine: `~/ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00039.pdf` or can be [downloaded](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabolites-02-00039.pdf).
 
 We are going to use the figure on page two to demonstrate the process of reconstructing semantic chemical markup from a preserved vector diagram. Below is a screenshot of the page...
 
@@ -179,12 +179,72 @@ This can be viewed interactively in Avogadro. To do this, run the following in y
 $ avogadro target/image.g.2.13.xml/image.g.2.13.svg.molecule0.cml
 ```
 
-You can them manipulate the molecule in 3D:
+You can then manipulate the molecule in 3D:
 
 ![Avogadro screenshot](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/avogadro.2.13.png)
 
 
 ## Example: molecules from figures 2
 
+We will now extend our analysis to include all molecules in the paper we worked on in the previous example.
+
+For this we need to create a directory to collect all the outputs, and place our PDF in there:
+
+```bash
+$ mkdir ~/molecules
+$ cp ~/ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00039.pdf ~/molecules
+$ cd ~/molecules
+```
+
+Now we run ami on the directory, specifying the chemistry plugin:
+
+```bash
+$ ami2-poc -i . -v org.xmlcml.xhtml2stm.visitor.chem.ChemVisitor
+```
+
+This may take a while to run. It will generate a number of outputs in a directory called `target`, including a CML file for each molecule it has recognised. We can list those files:
+
+```bash
+$ find ./target -name "*.cml"
+```
+
+And finally we can view the molecules interactively in avogadro, e.g.:
+
+```bash
+$ avogadro target/dummy..xml/page2.svg.molecule0.cml
+```
+
 ## Example: reactions from figures
 
+In this final example, we will analyse a new paper to extract not just molecules, but also reactions between molecules. This will also provide an opportunity to get a glimpse of the power of regaining semantic markup.
+
+The paper we will use this time is "[Genetics of Polyketide Metabolism in *Aspergillus nidulans*](http://www.mdpi.com/2218-1989/2/1/100)". The PDF is already on the VM: `~/ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00100.pdf` or can be [downloaded](http://www.mdpi.com/2218-1989/2/1/100/pdf).
+
+AMI's chemistry plugin will progress through the paper, and for each part that it considers to be a figure, will attempt to find reactions in it; if it can't find any, it will attempt to find molecules.
+
+We'll create a new directory and put the PDF in there:
+
+```bash
+$ mkdir ~/molecules2
+$ cp ~/ebi_workshop_20141006/sessions/4_AMI/chem_files/metabolites-02-00100.pdf ~/molecules2
+$ cd ~/molecules2
+```
+
+Now we can extract the reactions and molecules:
+
+```bash
+$ ami2-poc -i . -v org.xmlcml.xhtml2stm.visitor.chem.ChemVisitor
+```
+
+View output for page 23, (chunk 4):
+
+```bash
+$ cd ./target/output/10.3390_metabo2010100
+$ ls image.g.23.4*
+```
+
+For each reaction, there is a CML file. If it has a reactant, that will have a CML file and PNG file; likewise if it has a product. Additionally, each molecule (if reactions were found, only those involved in reactions, which is the case here) has a CML file and PNG file. Finally, the entire figure has an unannotated SVG file (`image.g.23.4.svg`) and an annotated one (`image.g.23.4annotated.svg`), as well as a PNG file.
+
+In particular, look at `image.g.23.4annotated.svg`, which shows the interpretation of the diagram including the OCR results. Within this SVG file, molecules are surrounded by black boxes and reaction arrow groups by yellow ones. Red lines link arrows to reactants, and green lines to products. Labels are surrounded by blue boxes, with blue lines linking them to the object that they refer to.
+
+The other file of particular interest is image.g.23.4clickable.html, in which you can click through to the PNG, SVG and CML representations of a molecule of your choice, to PubChem when a molecule is labelled, and to the CML representation of a reaction of your choice.
