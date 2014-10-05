@@ -2,6 +2,13 @@
 
 In this example we will use AMI's chemistry tools to analyse a paper and reconstruct semantic representations of the chemistry in it.
 
+We will extract data from the paper at four different levels:
+
+1. Automaticaly detecting chemical molecules in the text and extracting their semantic representation.
+2. Given a picture of a chemical molecule, extract the semantic representation.
+3. Given a paper, identify all the figures that contain chemical molecules and extract their semantic representation.
+4. Given a paper, identify all figures that contain reactions between chemical molecules and extract their semantic representation.
+
 ## Contents
 
 - [Software description](#software-description)
@@ -44,13 +51,13 @@ We'll use Page 2 (screenshot)
 
 ![image of Figure 2](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/metabo2010039.png)
 
-In the PDF visit Page 2 and verify that the image can be scaled many times without fuzziness or jaggies. This shows that it's preserved the vectors.
+In the PDF visit Page 2 and verify that the image can be scaled many times without fuzziness or jaggies. This shows that the publishers have preserved the vectors.
 
-AMI has extracted all subsets of vectors into chunks (g.2.12.3 is page 2 section 12 image 3).
+AMI has extracted all subsets of vectors into chunks (g.2.12.3 is page 2, section 12, image 3).
 
 Here's the SVG:
 
-![svg of kojic acid](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg)
+![svg of kojic acid](https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg)
 
 Your browser may show a broken link to the source which looks like:
 
