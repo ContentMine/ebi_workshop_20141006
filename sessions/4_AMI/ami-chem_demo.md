@@ -55,8 +55,7 @@ $ oscarpdf2json US20110000125.pdf > US20110000125.json
 There should now be a file in the current directory called `US20110000125.json`. This is a [JSON formatted](http://en.wikipedia.org/wiki/JSON) file. JSON can be viewed nicely in the browser. To view the file, run the following in the terminal:
 
 ```bash
-$ iceweasel &
-$ iceweasel --new-tab US20110000125.json
+$ iceweasel && iceweasel --new-tab US20110000125.json
 ```
 
 You can verify the results manually by using [ChEBI](http://www.ebi.ac.uk/chebi), [Chembl](https://www.ebi.ac.uk/chembl/), or [PubChem](https://pubchem.ncbi.nlm.nih.gov/) to search for the InChiKey and other descriptors included in the JSON output.
@@ -78,7 +77,7 @@ AMI has previously been run on this PDF to extract  the vector diagrams. It has 
 
 Here's the figure:
 
-![svg of kojic acid](https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg)
+<img src="https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg" width="250">
 
 And its source:
 
@@ -123,7 +122,7 @@ There will also be images...
 | --- | --- |
 | ![png from ami-chem](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.png) | ![SVG from ami-chem](https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg.molecule0.svg) |
 
-Note that the image is NOT a copy of the original. **It is completely generated from the semantic representation**. This is important: it mean the new image cannot infringe copyright.
+Note that the image is NOT a copy of the original. **It is completely generated from the semantic representation**. This is important: it means the new image cannot infringe copyright.
 
 ### Checking results
 
@@ -174,7 +173,7 @@ The contents of the file are CML:
 </molecule>
 ```
 
-and can be viewed in Avogadro. To do this, run the following in your terminal:
+This can be viewed interactively in Avogadro. To do this, run the following in your terminal:
 
 ```bash
 $ avogadro target/image.g.2.13.xml/image.g.2.13.svg.molecule0.cml
