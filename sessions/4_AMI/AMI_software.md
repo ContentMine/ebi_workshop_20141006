@@ -26,11 +26,13 @@ It can extract and/or index:
 
 ## Architecture
 
-AMI (start at [XHTML2STM](https://bitbucket.org/petermr/xhtml2stm/wiki/Home) is a Java framework which has a [Visitor pattern](http://en.wikipedia.org/wiki/Visitor_pattern). (also "plugin"). It is currently instantiated as ``xthml2stm`` soon to be refactored to ``ami``. Ami will try to normalize inputs , in particular:
+AMI (technical docs start at [XHTML2STM](https://bitbucket.org/petermr/xhtml2stm/wiki/Home) ) is a Java framework which has a [Visitor pattern](http://en.wikipedia.org/wiki/Visitor_pattern). (also "plugin"). It is currently instantiated as ``xthml2stm`` soon to be refactored to ``ami``. 
+
+Ami tries to normalize different input types , in particular:
 
 * PDF is normalized to XHTML + SVG + PNG
 * PNG is translated to SVG where possible
-* XHTML is structured
+* structure is added to XML and XHTML
 
 The following plugins are most developed:
 
@@ -40,6 +42,13 @@ The following plugins are most developed:
 * ami-species - in STYLED TEXT (from HTML or PDF).
 
 AMI is packaged as xhtml2stm_0.4~SNAPSHOT_all.deb run from the commandline as one of the four commands above. Tutorial examples are given for each of these under 4_AMI
+
+## Related software
+
+The complete MR group software stack also includes OSCAR, OPSIN, ChemicalTagger, and the JUMBO+JUMBOConverter libraries. Here we demonstrate two wrapped examples:
+
+* chemextractor (Mark Williamson). Wraps PDFBox and OSCAR to search for chemical entities in text
+* ami(2)-poc (Andy Howlett). Extracts molecules and reactions from diagrams in chemistry-contains papers.
 
 ## Caveats
 
