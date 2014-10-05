@@ -5,7 +5,8 @@ This session will involve hands-on demonstrations of the AMI software suite for 
 | Presenter | Description          |
 | ------------- | ----------- |
 | <img src=http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Peter_Murray-Rust_in_2008.jpg/180px-Peter_Murray-Rust_in_2008.jpg width=100px> | Peter is a Shuttleworth Fellow, leads the ContentMine project and is also responsible for development of AMI. |
-| <img src=http://blog.okfn.org/files/2012/03/Ross.png width=100px> | Ross is a postdoc at the University of Bath, a phylogenetics expert, and a vigorous open science advocate |
+| <img src=http://blog.okfn.org/files/2012/03/Ross.png width=100px> | Ross is a postdoc at the University of Bath, a phylogenetics expert, and a vigorous open science advocate. |
+| <img src=http://www-ucc.ch.cam.ac.uk/sites/default/files/imagecache/preview/members/photos/mark.jpg width=100> | Mark is a postdoc in Peter's group at the University of Cambridge. He's a scientific software engineer and is responsible for large parts of AMI. |
 
 ### Resources
 
