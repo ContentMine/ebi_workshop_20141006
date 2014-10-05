@@ -5,10 +5,10 @@ In this example we will use AMI's chemistry tools to analyse a paper and reconst
 ## Contents
 
 - [Software description](#software-description)
-- [Example: molecules from text]
-- [Example: molecules from figures 1]
-- [Example: molecules from figures 2]
-- [Example: reactions from figures 2]
+- [Example: molecules from text](#example-molecules-from-text)
+- [Example: molecules from figures 1](#example-molecules-from-figures-1)
+- [Example: molecules from figures 2](#example-molecules-from-figures-2)
+- [Example: reactions from figures](#example-reactions-from-figures)
 
 ## Software description
 
