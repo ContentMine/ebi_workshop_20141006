@@ -2,8 +2,8 @@
 
 Diagrams required here...
 
-(1) Overall Crawl-scrape-structure-extract-repulish chain
-(2) Details of AMI document conversion flow (PDF-> SVG, etc.
+* Overall Crawl-scrape-structure-extract-repulish chain
+* Details of AMI document conversion flow (PDF-> SVG, etc.
 
 ## Example of domain-based extractor (Chemical tagger)
 
@@ -11,11 +11,11 @@ A powerful achievable extraction technique is Natural Language Processing comabi
 
 Visit the web page and try the example there. 
 
-Try the atomospheric chemistry example (Hannah Barjat) which also uses geotagging
+Try the atomospheric chemistry example (Hannah Barjat) which additionally uses geotagging.
 
 Now find some chemistry recipes on the web (not easy as most are not Open Source yet). Cut and paste a typical synthesis (omitting the spectra, which we can also do), paste into ChemicalTagger and see how well it does. Poor recall may be due to a different de facto style.
 
-### Extending tagger
+### Extending taggers
 
 We believe it is relatively easy for domain experts to build taggers for other experimental and procedural sciences.
 
