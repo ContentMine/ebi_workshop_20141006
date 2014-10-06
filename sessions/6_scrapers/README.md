@@ -9,9 +9,10 @@ Richard Smith-Unna ([@blahah404](https://twitter.com/blahah404)) will present th
 
 ### Exercises
 
-- [creating selectors](01_creating_selectors.md)
-- [basic scraper construction](02_basic_scraper_construction)
-- [advanced scraper construction](03_advanced_scraper_construction)
+1. [using quickscrape](01_using_quickscrape.md)
+2. [creating selectors](02_creating_selectors.md)
+3. [basic scraper construction](03_basic_scraper_construction)
+4. [advanced scraper construction](04_advanced_scraper_construction)
 
 ### Extra materials
 
