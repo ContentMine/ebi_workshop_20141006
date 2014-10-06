@@ -1,9 +1,7 @@
 #Architecture for Mining
 
-Diagrams required here...
+[Architecture on PMR's blog](http://blogs.ch.cam.ac.uk/pmr/2014/08/11/how-contentmine-org-will-extract-100-million-scientific-facts/)
 
-* Overall Crawl-scrape-structure-extract-repulish chain
-* Details of AMI document conversion flow (PDF-> SVG, etc.
 
 ## Example of domain-based extractor (Chemical tagger)
 
