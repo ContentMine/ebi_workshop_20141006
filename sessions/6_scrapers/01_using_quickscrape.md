@@ -29,7 +29,7 @@ We will scrape an eLife paper: "[Cryo-EM structure of the Plasmodium falciparum 
 To run quickscrape, we simply need to tell it where to find the scraper collection, and what URL we want to scrape. Open up a terminal and run the following:
 
 ```bash
-$ quickscrape --url http://elifesciences.org/content/elife/3/e03080.full --scraperdir ~/journal-scrapers
+$ quickscrape --url http://elifesciences.org/content/elife/3/e03080.full --scraperdir ~/journal-scrapers/scrapers
 ```
 
 quickscrape will automatically select the correct scraper from its collection, download the page, and extract the specified elements, downloading any linked files specified in the scraper definition.
@@ -67,7 +67,7 @@ Now run `quickscrape` with the `--urllist` option:
 ```bash
 quickscrape \
   --urllist urls.txt \
-  --scraper molecules_figures.json
+  --scraperdir ~/journal-scrapers/scrapers
 ```
 
 Notice that `quickscrape` rate-limits itself to 3 scrapes per minute. This is a conservative limit, but note that imposing some kind of limit is important. It is a basic courtesy to the sites you are scraping - you wouldn't block the door of a library (I hope!), so don't take up more than a reasonable share of a site's bandwidth.
