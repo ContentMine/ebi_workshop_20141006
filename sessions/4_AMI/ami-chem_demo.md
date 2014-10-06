@@ -77,7 +77,7 @@ AMI has previously been run on this PDF to extract  the vector diagrams. It has 
 
 Here's the figure:
 
-<img src="https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg" width="250">
+<img src="https://rawgithub.com/ContentMine/ebi_workshop_20141006/master/sessions/4_AMI/chem_files/image.g.2.13.svg" width="500">
 
 And its source:
 
