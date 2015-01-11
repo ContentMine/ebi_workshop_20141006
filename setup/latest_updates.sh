@@ -35,10 +35,24 @@ sudo dpkg -i ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
 rm ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
+## AMI-CORE
+echo -ne "${blue}Updating AMI-CORE...${NC}  "
+wget https://bitbucket.org/petermr/ami-core/downloads/ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+sudo dpkg -i ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+rm ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+echo -e "${lightgreen}done.${NC}"
+
+## Norma
+echo -ne "${blue}Updating Norma...${NC}  "
+wget https://bitbucket.org/petermr/nhtml/downloads/nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
+sudo dpkg -i nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
+rm nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
+echo -e "${lightgreen}done.${NC}"
+
 ## Quickscrape
 echo -ne "${blue}Updating quickscrape...${NC}  "
 npm uninstall --global quickscrape 1>/dev/null 2>/dev/null
-npm install --global quickscrape@0.3.2
+npm install --global quickscrape@0.3.3
 echo -e "${lightgreen}done.${NC}"
 
 ## Journal-scrapers
