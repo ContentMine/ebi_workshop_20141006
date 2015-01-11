@@ -28,13 +28,6 @@ sudo dpkg -i chemextractor_1.0~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
 rm chemextractor_1.0~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
-## AMI2-POC
-echo -ne "${blue}Updating AMI2-POC...${NC}  "
-wget https://bitbucket.org/petermr/xhtml2stm/downloads/ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-sudo dpkg -i ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-rm ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-echo -e "${lightgreen}done.${NC}"
-
 ## AMI-CORE
 echo -ne "${blue}Updating AMI-CORE...${NC}  "
 wget https://bitbucket.org/petermr/ami-core/downloads/ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
