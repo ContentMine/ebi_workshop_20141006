@@ -45,7 +45,7 @@ echo -e "${lightgreen}done.${NC}"
 ## Quickscrape
 echo -ne "${blue}Updating quickscrape...${NC}  "
 npm uninstall --global quickscrape 1>/dev/null 2>/dev/null
-npm install --global quickscrape@0.3.5
+npm install --global quickscrape@0.3.6
 echo -e "${lightgreen}done.${NC}"
 
 ## Journal-scrapers
