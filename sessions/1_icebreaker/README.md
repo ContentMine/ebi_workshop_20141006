@@ -31,7 +31,7 @@ Add your answers to the Etherpad.
 * **ORANGE**: Places. Anything that resolves to a usefully defined point or region. "London", Latitude+Longitude, not "further north". Exclude metadata
 * **PURPLE**: Date/times. Resolvable to an ISO 8601 datetime or an ontologically supported concept ("Eocene", "equinoctual"). Not "recently".
 Exclude metadata.
-* **RED**: Identifiers. Formal codes given by authorities, e..g PMIDs, Genbank IDS. 
+* **PINK**: Identifiers. Formal codes given by authorities, e..g PMIDs, Genbank IDS. 
 * **CYAN**: Bibliographic and academic metadata, including rights, grants. Indicate precise lengths of phrase and constant/variable 
 components
 * **GREEN**: Chemical compounds. Resolvable in PubChem, or of generic chemical form. Not "diesel oil", "butter".

@@ -14,31 +14,24 @@ cd ~/ebi_workshop_20141006 1>/dev/null 2>/dev/null
 git pull 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
-## XHTML2STM
-echo -ne "${blue}Updating XHTML2STM...${NC}  "
-wget https://bitbucket.org/petermr/xhtml2stm/downloads/xhtml2stm_0.4~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-sudo dpkg -i xhtml2stm_0.4~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-rm xhtml2stm_0.4~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+## AMI-CORE
+echo -ne "${blue}Updating AMI-CORE...${NC}  "
+wget https://bitbucket.org/petermr/ami-core/downloads/ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+sudo dpkg -i ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+rm ami-core_0.1_2015_01_06_SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
-## ChemExtractor
-echo -ne "${blue}Updating ChemExtractor...${NC}  "
-wget https://bitbucket.org/mjw99/chemextractorpublic/downloads/chemextractor_1.0~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-sudo dpkg -i chemextractor_1.0~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-rm chemextractor_1.0~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-echo -e "${lightgreen}done.${NC}"
-
-## AMI2-POC
-echo -ne "${blue}Updating AMI2-POC...${NC}  "
-wget https://bitbucket.org/petermr/xhtml2stm/downloads/ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-sudo dpkg -i ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
-rm ami2-poc_0.0.2~SNAPSHOT_all.deb 1>/dev/null 2>/dev/null
+## Norma
+echo -ne "${blue}Updating Norma...${NC}  "
+wget https://bitbucket.org/petermr/nhtml/downloads/nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
+sudo dpkg -i nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
+rm nhtml_0.1~SNAPSHOT_2015_01_10_all.deb 1>/dev/null 2>/dev/null
 echo -e "${lightgreen}done.${NC}"
 
 ## Quickscrape
 echo -ne "${blue}Updating quickscrape...${NC}  "
 npm uninstall --global quickscrape 1>/dev/null 2>/dev/null
-npm install --global quickscrape@0.2.8
+npm install --global quickscrape@0.3.6
 echo -e "${lightgreen}done.${NC}"
 
 ## Journal-scrapers
