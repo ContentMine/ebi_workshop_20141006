@@ -18,6 +18,7 @@ scraperJSON scrapers are defined as JSON objects, which are similar to dictionar
     }
   ]
 }
+```
 
 There can be two keys in the root object:
 
