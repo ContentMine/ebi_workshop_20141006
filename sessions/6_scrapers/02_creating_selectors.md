@@ -1,6 +1,6 @@
 ## Creating selectors
 
-Selectors are specially formatted descriptions that specify one of more elements in a document. In the context of a scraper, they allow us to target a particular part of the page we want to scrape; for example, the title, or license, or abstract of a paper.
+Selectors are specially formatted descriptions that specify one or more elements in a document. In the context of a scraper, they allow us to target a particular part of the page we want to scrape; for example, the title, or license, or abstract of a paper.
 
 Because selectors are an important part of web design, browsers come equipped with tools that help us create them.
 
