@@ -26,11 +26,11 @@ We will use the browser to create some simple XPath selectors that target these 
 
 Start by right-clicking on the title of the article - you will see a drop-down menu. Select `Inspect Element`.
 
-![Screenshot of IceWeasel drop-down menu to inspect element](http://rawgithub.com/ContentMine/ebi_workshop_20141006/sessions/6_scrapers/assets/selectors_1.png)
+![Screenshot of IceWeasel drop-down menu to inspect element](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/6_scrapers/assets/selectors_1.png)
 
 The web inspector panel will open at the bottom of the screen. This panel shows the source code that generates the page you see above. The part of the source code responsible for the title is automatically selected.
 
-![Screenshot of IceWeasel web inspector panel](http://rawgithub.com/ContentMine/ebi_workshop_20141006/sessions/6_scrapers/assets/selectors_1.png)
+![Screenshot of IceWeasel web inspector panel](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/6_scrapers/assets/selectors_2.png)
 
 The code in the web inspector panel shows that this is the source of the title element:
 
@@ -56,7 +56,7 @@ The expression breaks down as follows:
 
 You can test that this selector works by using the *XPath Checker* Firefox extension. To do this, right-click anywhere on the page and choose `View XPath`. This will bring up a window that lets you enter an XPath expression and see the result of applying the expression to the page. Enter the expression we just built and confirm that it selects only the title.
 
-![Screenshot of IceWeasel XPath Checker extension ](http://rawgithub.com/ContentMine/ebi_workshop_20141006/sessions/6_scrapers/assets/selectors_3.png)
+![Screenshot of IceWeasel XPath Checker extension ](https://raw.githubusercontent.com/ContentMine/ebi_workshop_20141006/master/sessions/6_scrapers/assets/selectors_3.png)
 
 #### License
 
