@@ -4,6 +4,7 @@
 
 ## ContentMine workshop at EBI room A2–33
 ## 9:30am – 5:00pm, October 6th 2014
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ContentMine/ebi_workshop_20141006?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## <img src="http://www.biddlestudios.com/images/twitter_favicon.png" alt="twitter logo" style="width:10px;height:10px"> \#EBImine14
 
